@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Attribute Selectors</title>
+        <style>
+            /* yang memiliki atribut target */
+            a[target] {
+                color: red;
+                text-decoration: none;
+            }
+
+            /* yang memiliki value atribut '_blank' */
+            a[target="_blank"] {
+                color: green;
+            }
+
+            /* value yang terdapat kata 'belajar' */
+            p[title~="belajar"] {
+                background-color: yellow;
+            }
+
+            /* memiliki value 'learn' atau diikuti karakter - */
+            p[title|="learn"] {
+                background-color: pink;
+            }
+
+            /* dimulai dengan */
+            p[title^="happy"] {
+                background-color: violet;
+            }
+
+            /* diakhiri dengan */
+            p[title$="code"] {
+                color: blue;
+            }
+
+            /* yang mengandung */
+            p[title*="development"] {
+                background-color: aqua;
+            }
+
+            /* atribut selector tanpa tag */
+            [title="main"] {
+                background-color: orange;
+            }
+
+            .artikel[title="coding"] {
+                color: red;
+            }
+
+            #artikel[title="computer"] {
+                color: blue;
+            }
+
+            .coding[title*="coding"] {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="" target="">Ini dipilih, warna merah</a>
+        <br />
+        <a href="">Ini tidak dipilih</a>
+        <hr />
+        <a href="" target="_blank">Ini dipilih, warna hijau</a>
+        <hr />
+        <div>
+            <p title="belajar pemrograman">Ini dipilih</p>
+            <p title="belajarpemrograman">Ini tidak dipilih</p>
+        </div>
+
+        <hr />
+        <div>
+            <p title="learn css">Ini tidak dipilih</p>
+            <p title="learn">Ini dipilih</p>
+            <p title="learn-css">Ini dipilih</p>
+            <p title="learn_css">Ini tidak dipilih</p>
+            <p title="learn+css">Ini tidak dipilih</p>
+        </div>
+
+        <hr />
+        <div>
+            <p title="happy with css">Ini dipilih</p>
+            <p title="with css happy">Ini tidak dipilih</p>
+            <p title="happy">Ini dipilih</p>
+            <p title="happy-with-css">Ini dipilih</p>
+        </div>
+
+        <hr />
+        <div>
+            <p title="code to build">Ini tidak dipilih</p>
+            <p title="code">Ini dipilih, warna biru</p>
+            <p title="code-to-build">Ini tidak dipilih</p>
+            <p title="build-with-code">Ini dipilih, warna biru</p>
+            <p title="build and code">Ini dipilih, warna biru</p>
+        </div>
+
+        <hr />
+        <div>
+            <p title="web development">Ini dipilih</p>
+            <p title="development">Ini dipilih</p>
+            <p title="self-development">Ini dipilih</p>
+            <p title="development web">Ini dipilih</p>
+            <p title="web self">Ini tidak dipilih</p>
+            <p title="webdevelopment">Ini dipilih</p>
+        </div>
+
+        <hr />
+        <div>
+            <main title="main">Ini dipilih</main>
+            <main class="artikel" title="coding">Ini dipilih, warna merah</main>
+            <main id="artikel" title="computer">Ini dipilih, warna biru</main>
+            <main class="coding" title="learncoding">
+                Ini dipilih, warna hijau
+            </main>
+        </div>
+    </body>
+</html>
