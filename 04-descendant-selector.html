@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Descendant Selector</title>
+        <style>
+            /* Descendant menggunakan element tag */
+            div p {
+                background-color: yellow;
+            }
+
+            /* Descendant menggunakan class */
+            .a .aside {
+                background-color: blue;
+                color: white;
+            }
+
+            /* Descendant menggunakan id */
+            #section #main {
+                background-color: yellow;
+            }
+
+            #section main {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Descendant menggunakan tag -->
+        <h3>Descendant menggunakan tag</h3>
+        <div>
+            <p>Ini dipilih</p>
+            <article>
+                <p>Ini dipilih</p>
+            </article>
+        </div>
+        <p>Ini tidak dipilih</p>
+        <hr />
+
+        <!-- Descendant menggunakan class -->
+        <h3>Descendant menggunakan class</h3>
+        <main class="a">
+            <aside>aside tidak dipilih, tidak ada class</aside>
+            <article>
+                <aside class="aside">aside dipilih</aside>
+            </article>
+        </main>
+        <aside class="aside">aside tidak dipilih</aside>
+        <hr />
+
+        <!-- Descendant menggunakan id -->
+        <h3>Descendant menggunakan id</h3>
+        <section id="section">
+            <main id="main">main yang dipilih</main>
+            <article>
+                <main>main tidak dipilih, tidak ada id</main>
+            </article>
+        </section>
+        <main>main yang tidak dipilih</main>
+    </body>
+</html>

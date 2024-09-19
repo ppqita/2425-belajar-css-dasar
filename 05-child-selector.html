@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Child Selector</title>
+        <style>
+            div > p {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Child selector menggunakan element tag -->
+        <div>
+            <article>
+                <p>Ini tidak dipilih, cucu (bukan anak langsung)</p>
+            </article>
+            <p>Ini dipilih, anak langsung</p>
+        </div>
+        <p>Ini tidak dipilih, siapa lu tong!</p>
+        <hr />
+    </body>
+</html>

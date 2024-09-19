@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Latihan 2: Combinator Selector</title>
+        <style>
+            .kartu p {
+                background-color: red;
+            }
+
+            h1 {
+                color: white;
+            }
+
+            div h1 {
+                background-color: blue;
+            }
+
+            /* Latihan Child */
+            .utama > h2,
+            .utama > p {
+                color: #ff5722;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Latihan Descendant Selector -->
+        <h3>Latihan Descendant Selector</h3>
+        <div>
+            <h1>Kejutan!</h1>
+            <p>
+                Ini adalah kartu kejutan. Arahkan kursor ke bagian ini, dan
+                lihat teks berubah warna.
+            </p>
+            <div class="kartu">
+                <ul>
+                    <li>Rahasia pertama: Kode HTML</li>
+                    <li>Rahasia kedua: CSS yang rapi</li>
+                    <li>Rahasia ketiga: Jangan lupa JavaScript!</li>
+                </ul>
+                <p>Ini adalah bagian dari kartu</p>
+            </div>
+        </div>
+        <hr />
+
+        <!-- Latihan Child Selector -->
+        <h3>Latihan Child Selector</h3>
+        <div class="komentar">
+            <div class="utama">
+                <h2>Komentar Utama</h2>
+                <p>Ini adalah komentar utama yang akan diberi efek highlight</p>
+                <div class="sub-komentar">
+                    <h3>Sub-Komenter 1</h3>
+                    <p>
+                        Ini adalah sub-komentar yang tidak akan diberi highlight
+                    </p>
+                </div>
+                <div class="sub-komentar">
+                    <h3>Sub-Komenter 2</h3>
+                    <p>
+                        Ini adalah sub-komentar lain yang tidak terpengaruh oleh
+                        efek hover pada komentar utama.
+                    </p>
+                </div>
+            </div>
+            <div class="utama">
+                <h2>Komentar Utama Lainnya</h2>
+                <p>
+                    Komentar utama lain yang juga mendapat highlight pada elemen
+                    anak langsungnya.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

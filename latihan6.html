@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Selector Exercise</title>
+        <style>
+            /* Descendant Selector: Apply styles to all paragraphs inside .descendant */
+            .a p {
+                color: green;
+                font-size: 16px;
+            }
+
+            /* Child Selector: Apply styles only to direct child <p> of .child */
+            .b > p {
+                font-weight: bold;
+                color: blue;
+            }
+
+            /* Adjacent Sibling Selector: Apply styles to the <p> directly after <h2> */
+            .c h2 + p {
+                color: red;
+                font-style: italic;
+            }
+
+            /* General Sibling Selector: Apply styles to all <p> after <h3> */
+            .c h3 ~ p {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Ini tidak dipilih</h1>
+            <section class="a">
+                <div class="b">
+                    <p>Ini dipilih, warna biru, tebal</p>
+                    <span>Ini tidak dipilih</span>
+                </div>
+                <div class="c">
+                    <h2>Ini tidak dipilih</h2>
+                    <p>Ini dipilih, warna merah, miring</p>
+                    <h3>Ini tidak dipilih</h3>
+                    <p>Ini dipilih background kuning, warna hijau</p>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

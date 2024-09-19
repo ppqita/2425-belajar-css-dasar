@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Latihan 4: General Sibling</title>
+        <style>
+            aside ~ section {
+                background-color: red;
+            }
+
+            aside ~ p {
+                background-color: violet;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Latihan General Sibling -->
+        <main>
+            <article>
+                <p>Ini tidak dipilih</p>
+                <aside>
+                    <p>Ini tidak dipilih</p>
+                </aside>
+                <section><p>Ini dipilih</p></section>
+                <p>Ini dipilih</p>
+                <p>Ini dipilih</p>
+                <section>
+                    <p>Ini dipilih</p>
+                </section>
+                <aside>
+                    <p>Ini tidak dipilih</p>
+                </aside>
+                <p>Ini dipilih</p>
+            </article>
+        </main>
+    </body>
+</html>

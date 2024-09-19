@@ -1,0 +1,25 @@
+/* Mobile (Responsive Design) */
+#lorem {
+    color: blue;
+}
+
+.red {
+    color: pink;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+#lorem,
+.red,
+.uppercase,
+div {
+    text-align: center;
+}
+
+/* Tablet atau iPad */
+
+/* Laptop (Notebook) */
+
+/* Desktop atau PC (Personal Computer) */

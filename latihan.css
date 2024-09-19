@@ -1,0 +1,92 @@
+.upper {
+    text-transform: uppercase;
+}
+
+#artikel {
+    background-color: yellow;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+.upper,
+#artikel,
+h1 {
+    color: red;
+}
+
+.blue {
+    color: blue;
+    text-align: center;
+}
+
+#artikel2 {
+    background-color: green;
+}
+
+.yellow {
+    color: white;
+}
+
+#red {
+    background-color: red;
+}
+
+#orange,
+#blue {
+    text-align: center;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#blue {
+    background-color: blue;
+}
+
+.div {
+    text-align: right;
+}
+
+#heading3 {
+    text-align: center;
+}
+
+.background {
+    background-color: violet;
+}
+
+.p1 {
+    background-color: blueviolet;
+}
+
+#h3 {
+    text-align: right;
+    background-color: brown;
+}
+
+#div1 {
+    text-align: center;
+}
+
+#h1 {
+    color: brown;
+}
+
+.a {
+    background-color: yellow;
+}
+
+.b {
+    color: red;
+}
+
+.c {
+    background-color: blue;
+}
+
+.d {
+    background-color: red;
+}

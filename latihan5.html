@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Latihan 5: Adjacent & General Sibling</title>
+        <style>
+            main + p {
+                background-color: green;
+                color: white;
+            }
+
+            p + aside {
+                background-color: yellow;
+            }
+
+            article + p {
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Latihan Adjacent Sibling -->
+        <main>
+            <p>Ini tidak dipilih</p>
+            <p>Ini tidak dipilih</p>
+        </main>
+        <p>Ini dipilih dan warna putih</p>
+        <p>Ini tidak dipilih</p>
+        <article>
+            <p>Ini tidak dipilih</p>
+            <p>Ini tidak dipilih</p>
+            <aside>Ini dipilih</aside>
+        </article>
+        <p>Ini dipilih</p>
+    </body>
+</html>
