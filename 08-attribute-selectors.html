@@ -57,6 +57,14 @@
             .coding[title*="coding"] {
                 color: green;
             }
+
+            [class="coding"] {
+                color: purple;
+            }
+
+            [id="belajar"] {
+                color: orange;
+            }
         </style>
     </head>
     <body>
@@ -110,11 +118,18 @@
         <hr />
         <div>
             <main title="main">Ini dipilih</main>
+            <p title="main">Ini dipilih</p>
             <main class="artikel" title="coding">Ini dipilih, warna merah</main>
             <main id="artikel" title="computer">Ini dipilih, warna biru</main>
             <main class="coding" title="learncoding">
                 Ini dipilih, warna hijau
             </main>
+        </div>
+
+        <hr />
+        <div>
+            <p class="coding">Ini dipilih, warna purple</p>
+            <p id="belajar">Ini dipilih, warna orange</p>
         </div>
     </body>
 </html>

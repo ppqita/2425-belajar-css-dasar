@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pseudo Elements</title>
+        <style>
+            .a::first-line {
+                background-color: red;
+                color: yellow;
+            }
+
+            .b::first-letter {
+                background-color: pink;
+                font-size: 45px;
+            }
+
+            .c::before {
+                content: url("./images/medal-line.png");
+            }
+
+            .d::after {
+                content: url("./images/medal-line.png");
+            }
+
+            .e::selection {
+                color: red;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="a">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat,
+            non ducimus mollitia dolore inventore fugit dolorum saepe quas quam
+            excepturi quaerat error laboriosam rerum repellendus. Dicta a ipsa
+            eligendi possimus?
+        </p>
+        <p class="b">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            odio obcaecati consectetur, odit consequatur ducimus eligendi dicta
+            tempora dolorum, iste quo nostrum eaque deleniti et ullam eum
+            assumenda fuga laboriosam!
+        </p>
+        <p class="c">Paragraf C</p>
+        <p class="d">Paragraf D</p>
+        <p class="e">Paragraf E</p>
+    </body>
+</html>

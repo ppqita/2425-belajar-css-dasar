@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pseudo Classes</title>
+        <style>
+            /* selector:pseudo-class {
+                property: value;
+            } */
+
+            /* sebelum diklik - unvisited link */
+            .a:link {
+                color: orange;
+            }
+
+            /* setelah diklik - visited link */
+            .a:visited {
+                color: red;
+            }
+
+            /* pointer di atas link - mouse over link */
+            .a:hover {
+                color: green;
+            }
+
+            /* link diklik dan tahan - selected link */
+            .a:active {
+                color: gold;
+            }
+
+            li:nth-child(2) {
+                background-color: yellow;
+            }
+
+            li:nth-child(4) {
+                background-color: green;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Anchor Pseudo Class -->
+        <a class="a" href="#">Paragraf A</a>
+        <br />
+        <a class="b" href="#">Paragraf B</a>
+        <br />
+        <a class="c" href="#">Paragraf C</a>
+        <br />
+        <a class="d" href="#">Paragraf D</a>
+
+        <!-- nth-child -->
+        <ul>
+            <li>Pertama</li>
+            <li>Kedua</li>
+            <li>Ketiga</li>
+            <li>Keempat</li>
+            <li>Kelima</li>
+        </ul>
+    </body>
+</html>

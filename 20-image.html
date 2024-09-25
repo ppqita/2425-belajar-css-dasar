@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Image</title>
+        <style>
+            .hero {
+                /* image */
+                background-image: url("./images/bright.jpg");
+                background-color: rgba(0, 0, 0, 0.4);
+                background-blend-mode: multiply;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                /* css layout */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                /* formatting text */
+                color: white;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                height: 300px;
+                padding: 20px;
+                border-radius: 6px;
+                text-align: center;
+            }
+
+            .image {
+                background-color: orange;
+                padding: 20px;
+                border-radius: 8px;
+                /* opacity: 100%; */
+                opacity: 10%;
+            }
+
+            .mubarok {
+                background-color: pink;
+                padding: 10px;
+                border-radius: 10px;
+                opacity: 90%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hero">Hero Image</div>
+        <hr />
+        <div class="image">Image</div>
+        <hr />
+        <div class="mubarok">Abdullah Mubarok</div>
+    </body>
+</html>

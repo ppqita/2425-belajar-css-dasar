@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Latihan 7: Attribute Selectors</title>
+        <style>
+            /* Latihan 1 */
+            [title=""] {
+                background-color: red;
+                color: white;
+            }
+
+            [target=""] {
+                text-decoration: none;
+            }
+
+            [target="_blank"] {
+                color: orange;
+            }
+
+            /* Latihan 2 */
+            [title~="css"] {
+                background-color: blue;
+                color: white;
+            }
+
+            [title~="belajar"] {
+                text-align: right;
+            }
+
+            /* Latihan 3 */
+            [title|="pasar"] {
+                background-color: pink;
+            }
+
+            /* Latihan 4 */
+            [title^="smile"] {
+                background-color: yellow;
+            }
+
+            /* Latihan 5 */
+            [title$="build"] {
+                background-color: coral;
+            }
+
+            /* Latihan 6 */
+            [title*="web"] {
+                background-color: gold;
+            }
+
+            /* Latihan 7 */
+            .main[title="main"] {
+                background-color: orange;
+            }
+
+            .artikel[title*="coding"] {
+                color: red;
+            }
+
+            #artikel[title="computer"] {
+                color: blue;
+            }
+
+            .coding[title*="coding"] {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Latihan 1 -->
+        <a href="" target="" title=""
+            >Ini dipilih, background merah, warna putih</a
+        >
+        <br />
+        <a href="" target="">Ini tidak dipilih</a>
+        <hr />
+        <a href="" target="_blank">Ini dipilih, warna orange</a>
+
+        <!-- Latihan 2 -->
+        <hr />
+        <div>
+            <p title="belajar css">Ini dipilih</p>
+            <p title="belajarcss">Ini tidak dipilih</p>
+            <p title="css">Ini dipilih</p>
+        </div>
+
+        <!-- Latihan 3 -->
+        <hr />
+        <div>
+            <p title="pasar raya">Ini tidak dipilih</p>
+            <p title="pasar">Ini dipilih, background pink</p>
+            <p title="pasar_raya">Ini tidak dipilih</p>
+            <p title="pasar+raya">Ini tidak dipilih</p>
+            <p title="pasar-raya">Ini dipilih, background pink</p>
+        </div>
+
+        <!-- Latihan 4 -->
+        <hr />
+        <div>
+            <p title="smile with code">Ini dipilih, background yellow</p>
+            <p title="with code smile">Ini tidak dipilih</p>
+            <p title="smile">Ini dipilih, background yellow</p>
+            <p title="smile-with-css">Ini dipilih, background yellow</p>
+        </div>
+
+        <!-- Latihan 5 -->
+        <hr />
+        <div>
+            <p title="code to build">Ini dipilih, background coral</p>
+            <p title="code">Ini tidak dipilih</p>
+            <p title="code-to-build">Ini dipilih, background coral</p>
+            <p title="build-with-code">Ini tidak dipilih</p>
+            <p title="build and code">Ini tidak dipilih</p>
+        </div>
+
+        <!-- Latihan 6 -->
+        <hr />
+        <div>
+            <p title="web development">Ini dipilih, background gold</p>
+            <p title="development">Ini tidak dipilih</p>
+            <p title="self-development">Ini tidak dipilih</p>
+            <p title="development web">Ini dipilih, background gold</p>
+            <p title="web self">Ini dipilih, background gold</p>
+            <p title="webdevelopment">Ini dipilih, background gold</p>
+        </div>
+
+        <!-- Latihan 7 -->
+        <hr />
+        <div>
+            <main title="main" id="main">Ini tidak dipilih</main>
+            <main class="coding" title="learncoding">
+                Ini dipilih, warna hijau
+            </main>
+            <main id="artikel" title="computer">Ini dipilih, warna biru</main>
+            <p title="main" class="main">Ini dipilih, background orange</p>
+            <main class="artikel" title="coding">Ini dipilih, warna merah</main>
+        </div>
+    </body>
+</html>
