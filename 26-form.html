@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+        <style>
+            label {
+                margin-top: 1em;
+                /* pada asalnya label inline, kemudian kita ubah menjadi block */
+                display: block;
+            }
+
+            input:enabled {
+                background-color: red;
+            }
+
+            *:disabled {
+                background-color: rgb(203, 203, 203);
+            }
+
+            input:valid {
+                outline: 2px solid green;
+            }
+
+            input[type="email"]:user-valid + span::before {
+                /* content: "✓"; */
+                content: url("./images/medal-line.png");
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" />
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required />
+            <span></span>
+
+            <label for="emp">Karyawan: </label>
+            <select name="emp" id="emp" disabled>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="age">Age: (18+) </label>
+            <input type="number" id="age" name="age" min="18" />
+
+            <label for="date">Date: </label>
+            <input type="date" id="date" name="date" disabled />
+
+            <label for="resume">Resume: </label>
+            <input type="file" id="resume" name="resume" />
+        </form>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Table</title>
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+
+            table,
+            th,
+            td {
+                border: 2px solid black;
+                border-collapse: collapse;
+            }
+
+            .table-wrap {
+                width: 100%;
+                height: 100%;
+                background-color: pink;
+                padding: 5px;
+                /* overflow: auto; */
+            }
+
+            .table-santri td:nth-child(1) {
+                text-align: center;
+            }
+
+            .table-asrama td:nth-child(1) {
+                text-align: right;
+            }
+
+            table {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="table-wrap">
+            <table class="table-santri">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Nomor Induk</th>
+                        <th>Alamat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Abdullah Mubarok</td>
+                        <td>011234</td>
+                        <td>Sukoharjo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Halim</td>
+                        <td>011235</td>
+                        <td>Semarang</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Ibrohim</td>
+                        <td>011236</td>
+                        <td>Banyumas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br />
+        <div>
+            <table class="table-asrama">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>No HP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Akyel</td>
+                        <td>0857</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Alif</td>
+                        <td>0813</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Hanif</td>
+                        <td>0878</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
